@@ -864,7 +864,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: white;
-    padding-bottom: 3rem;
   }
   .nav-bar .nav-links,
   .nav-bar .quote {
@@ -896,6 +895,7 @@ body {
     margin: auto;
     margin-top: 2rem;
     width: 200px;
+    margin-bottom: 2rem;
   }
   .nav-bar .bars {
     display: block;
