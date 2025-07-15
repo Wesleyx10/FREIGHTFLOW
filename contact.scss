@@ -386,7 +386,8 @@ iframe {
   .nav-bar {
     flex-wrap: wrap;
     justify-content: space-between;
-
+    background-color: white;
+    padding-bottom: 3rem;
     .nav-links,
     .quote {
       width: 100%;
