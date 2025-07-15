@@ -1,0 +1,1071 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-font: roboto;
+  --number-color: #d1b746;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: archivo;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  font-family: var(--main-font);
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 999;
+}
+.nav-bar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: black;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  color: white;
+}
+.nav-bar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav-bar .nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  transition: 0.3s ease;
+}
+.nav-bar .nav-links a:hover {
+  padding-bottom: 0.3rem;
+  border-bottom: 2.5px solid #e8c113;
+  color: #ae9421;
+}
+.nav-bar .nav-links .active {
+  color: #ae9421;
+}
+.nav-bar .quote {
+  color: white;
+  background-color: black;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.nav-bar .quote:hover {
+  background-color: rgba(46, 44, 44, 0.8);
+}
+.nav-bar .bars {
+  display: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 10rem 0rem 9rem 5rem;
+  background-image: url(images/row-modern-semi-trucks-parking-lot.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: var(--main-font);
+}
+.header .texts {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 0.6rem;
+}
+.header .texts span {
+  font-family: Archivo;
+  font-size: 30px;
+  font-weight: 200;
+  letter-spacing: 7px;
+}
+.header .texts strong {
+  font-size: 35px;
+  font-weight: 500;
+  font-family: Archivo;
+}
+.header .texts p {
+  font-weight: 400;
+  font-size: 18px;
+}
+.header .header-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.header .header-links #phone {
+  background-color: #e8c113;
+  padding: 0.6rem 1.5rem;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.header .header-links #phone:hover {
+  background-color: #bda435;
+}
+.header .header-links .quote {
+  color: white;
+  background-color: black;
+  padding: 0.6rem 1.5rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.header .header-links .quote:hover {
+  background-color: rgba(46, 44, 44, 0.8);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+.content .introductory-msg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  font-family: archivo;
+}
+.content .introductory-msg .intro-text strong {
+  font-size: 25px;
+}
+.content .introductory-msg .intro-text p {
+  margin-top: 0.5rem;
+  letter-spacing: 1px;
+  font-size: 19px;
+}
+.content .introductory-msg .cards {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.content .introductory-msg .cards .intro-card {
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/Frame\ 10.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 1rem;
+  padding: 1rem;
+  height: 160px;
+  border: 2px solid #ece1b7;
+  border-radius: 5px;
+  border-bottom: none;
+  border-top: none;
+  margin-bottom: 2rem;
+}
+.content .introductory-msg .cards .intro-card i {
+  color: #af1a1b;
+  font-size: 25px;
+}
+.content .introductory-msg .cards .intro-card strong {
+  font-size: 14px;
+}
+.content .introductory-msg .cards .intro-card p {
+  font-size: 15px;
+  font-weight: 300;
+}
+.content .about-section {
+  background-image: url(images/transport-3209864_1280.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20rem 8rem 0rem 0rem;
+  width: 89.9%;
+}
+.content .about-section .about-msg {
+  background-color: #e7eaed;
+  width: 600px;
+  padding: 1rem 2rem 1rem 4.5rem;
+  font-family: archivo;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.content .about-section .about-msg h1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 7px;
+  font-size: 20px;
+}
+.content .about-section .about-msg h1 strong {
+  font-weight: 600;
+  letter-spacing: 0px;
+  font-size: 26px;
+}
+.content .about-section .about-msg span {
+  background-color: #efe9d0;
+  padding: 0.5rem;
+  font-size: 16px;
+  font-weight: 700;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.experience .illustration {
+  display: flex;
+  align-items: center;
+}
+.experience .illustration img {
+  width: 400px;
+}
+.experience .illustration .illustration-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.experience .illustration .illustration-cards .card {
+  display: flex;
+  align-items: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: archivo;
+  gap: 0.5rem;
+  position: relative;
+  right: 9rem;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  border: 1px solid #ece1b7;
+  border-radius: 5px;
+}
+.experience .illustration .illustration-cards .card h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+.experience .illustration .illustration-cards .card h1 span {
+  font-size: 15px;
+  font-weight: 300;
+}
+.experience .illustration .illustration-cards .card i {
+  font-size: 30px;
+}
+.experience .experience-text {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: archivo;
+}
+.experience .experience-text strong {
+  font-size: 25px;
+}
+.experience .experience-text p {
+  font-weight: 300;
+  font-size: 17px;
+}
+.experience .experience-text .exp-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.experience .experience-text .exp-links #phone {
+  background-color: #e8c113;
+  padding: 0.5rem 1rem;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+.experience .experience-text .exp-links .quote {
+  color: white;
+  background-color: black;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.experience .experience-text .exp-links #phone:hover {
+  background-color: #bda435;
+}
+.experience .experience-text .exp-links .quote:hover {
+  background-color: rgba(46, 44, 44, 0.8);
+}
+
+.service-areas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 17rem;
+  padding: 2rem 0rem;
+  background: linear-gradient(rgba(166, 0, 2, 0.7), rgba(166, 0, 2, 0.7)), url(images/modern-world-map-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: archivo;
+}
+.service-areas .availability {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.service-areas .availability h1 {
+  letter-spacing: 5px;
+  font-weight: 500;
+  font-size: 35px;
+}
+.service-areas .availability p {
+  font-weight: 300;
+  font-size: 18px;
+}
+.service-areas .links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.service-areas .links #phone {
+  background-color: #e8c113;
+  padding: 0.6rem 1.5rem;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+.service-areas .links .quote {
+  color: white;
+  background-color: black;
+  padding: 0.6rem 1.5rem;
+  text-decoration: none;
+}
+
+.planning {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  font-family: archivo;
+  justify-content: center;
+}
+.planning .planning-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.planning .planning-cards .plans {
+  background-color: #f2f0e6;
+  padding: 1rem 2rem;
+  width: 475px;
+}
+.planning .planning-cards .plans h1 {
+  font-size: 20px;
+}
+.planning .planning-cards .plans p {
+  margin-top: 0.5rem;
+}
+.planning .plan-illustration {
+  display: flex;
+}
+.planning .plan-illustration img {
+  width: 410px;
+  height: 430px;
+}
+.planning .plan-illustration .plan-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.planning .plan-illustration .plan-cards .plan {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
+  background-color: rgba(167, 158, 158, 0.2);
+  font-family: archivo;
+  gap: 0.5rem;
+  position: relative;
+  left: 8rem;
+  top: 6rem;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #ece1b7;
+  border-radius: 5px;
+}
+.planning .plan-illustration .plan-cards .plan span {
+  font-size: 15px;
+  font-weight: 600;
+}
+.planning .plan-illustration .plan-cards .plan i {
+  font-size: 20px;
+}
+
+.safety {
+  margin-top: 2.5rem;
+  font-family: archivo;
+  display: flex;
+  align-items: center;
+}
+.safety img {
+  width: 50%;
+}
+.safety h1 {
+  background: linear-gradient(rgba(159, 144, 52, 0.7), rgba(159, 177, 159, 0.7)), url(images/flash\ bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  padding: 1rem;
+  width: 50%;
+  height: 390px;
+}
+.safety h1 p {
+  font-size: 17px;
+  letter-spacing: 0px;
+  font-weight: 300;
+}
+
+.driver-application {
+  display: flex;
+  align-items: center;
+  font-family: archivo;
+  margin-top: 2.5rem;
+  justify-content: center;
+  gap: 7rem;
+}
+.driver-application .apply-link {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(23, 56, 35, 0.7), rgba(23, 56, 35, 0.7)), url(images/medium-shot-man-wearing-helmet.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 4rem;
+  gap: 1rem;
+  border-radius: 5px;
+  color: white;
+}
+.driver-application .apply-link h1 {
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  white-space: nowrap;
+}
+.driver-application .apply-link p {
+  font-size: 17px;
+  width: 400px;
+  font-weight: 300;
+}
+.driver-application .apply-link a {
+  background-color: black;
+  color: white;
+  padding: 0.6rem;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 150px;
+  text-align: center;
+  font-size: 14px;
+}
+.driver-application .requirements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.driver-application .requirements .requirement-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  border: 1.5px solid #989898;
+  border-radius: 5px;
+  gap: 1rem;
+}
+.driver-application .requirements .requirement-card .title {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.driver-application .requirements .requirement-card .title i {
+  font-size: 15px;
+}
+.driver-application .requirements .requirement-card .contents {
+  width: 450px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  padding: 0;
+}
+.driver-application .requirements .requirement-card .contents.open {
+  max-height: 1000px;
+}
+
+.thank-you {
+  position: fixed;
+  top: 3rem;
+  z-index: 1200;
+  text-align: center;
+  margin: auto;
+  color: white;
+  background-color: rgb(29, 125, 29);
+  padding: 1rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  place-self: center;
+  font-size: 17px;
+  transform: translateY(-200px);
+  transition: transform 0.3s ease;
+  display: none;
+  opacity: 0;
+}
+
+.thank-you.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.help-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  background-color: #f8f5e6;
+  margin-top: 2.5rem;
+  font-family: archivo;
+  padding: 3rem;
+}
+.help-form .help-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fcfbf5;
+  padding: 2.5rem 1.5rem;
+  gap: 1.5rem;
+  border-radius: 5px;
+  width: 50%;
+}
+.help-form .help-card h1 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.help-form .help-card span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #eaeaea;
+  font-size: 20px;
+  padding: 1.2rem;
+  border: 1px solid #b9926b;
+  border-radius: 10px;
+}
+.help-form .help-card span i {
+  color: #b9926b;
+}
+.help-form .help-input {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.help-form .help-input .inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+}
+.help-form .help-input .inputs input {
+  padding: 1rem 1rem 1rem 0.5rem;
+  outline: none;
+  border: 1px solid grey;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.help-form .help-input .inputs input::-moz-placeholder {
+  font-size: 15px;
+  font-family: archivo;
+  color: black;
+  font-weight: 200;
+}
+.help-form .help-input .inputs input::placeholder {
+  font-size: 15px;
+  font-family: archivo;
+  color: black;
+  font-weight: 200;
+}
+.help-form .help-input .inputs input:focus {
+  border: 2px solid #b9926b;
+}
+.help-form .help-input .inputs #message {
+  grid-column: span 2;
+  padding: 1rem 1rem 5rem 0.5rem;
+  outline: none;
+  border: 1px solid grey;
+  font-size: 16px;
+  resize: none;
+  border-radius: 5px;
+}
+.help-form .help-input .inputs #message::-moz-placeholder {
+  font-size: 15px;
+  font-family: archivo;
+  color: black;
+  font-weight: 200;
+}
+.help-form .help-input .inputs #message::placeholder {
+  font-size: 15px;
+  font-family: archivo;
+  color: black;
+  font-weight: 200;
+}
+.help-form .help-input .inputs #message:focus {
+  border: 2px solid #b9926b;
+}
+.help-form .help-input button {
+  cursor: pointer;
+  background-color: #ac8829;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  font-family: archivo;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.help-form .help-input button:hover {
+  background-color: #896f27;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9rem;
+  background: linear-gradient(rgba(1, 23, 47, 0.9), rgba(1, 23, 47, 0.9)), url(images/modern-world-map-background.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 3rem 2rem 2rem 1rem;
+  color: white;
+  font-family: archivo;
+}
+.footer .footer-links {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.footer .footer-links .logo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer .footer-links .logo-section .logo {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  color: black;
+  width: 120px;
+  text-align: center;
+}
+.footer .footer-links .logo-section span {
+  font-size: 17px;
+  font-weight: 200;
+  width: 330px;
+}
+.footer .footer-links .logo-section .socials {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 20px;
+}
+.footer .footer-links .link-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer .footer-links .link-section h1 {
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+.footer .footer-links .link-section a {
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
+}
+.footer .footer-links .link-section span {
+  font-weight: 200;
+}
+.footer .footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+.footer .footer-bottom .line {
+  height: 1px;
+  width: 100%;
+  background-color: #435365;
+}
+.footer .footer-bottom span {
+  font-size: 15px;
+  font-weight: 200;
+  color: grey;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .nav-bar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .nav-bar .nav-links,
+  .nav-bar .quote {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    display: flex;
+  }
+  .nav-bar .nav-links.show {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  .nav-bar .nav-links.show a {
+    font-size: 22px;
+  }
+  .nav-bar .nav-links.show a:hover {
+    padding-bottom: 0.1rem;
+  }
+  .nav-bar .quote.show {
+    max-height: 500px;
+    opacity: 1;
+    margin: auto;
+    margin-top: 2rem;
+    width: 200px;
+  }
+  .nav-bar .bars {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  .nav-bar .bars i {
+    font-size: 30px;
+    transition: transform 0.4s ease;
+  }
+  .nav-bar .bars .fa-xmark {
+    display: none;
+  }
+  .header {
+    padding: 9rem 1rem 3rem 1rem;
+    align-items: center;
+    justify-content: center;
+    background-position: left;
+    background-attachment: static;
+  }
+  .header .texts {
+    width: 80%;
+  }
+  .header .texts span {
+    font-size: 27px;
+    white-space: nowrap;
+    letter-spacing: 0px;
+    margin: auto;
+    text-align: center;
+  }
+  .header .texts strong {
+    font-size: 28px;
+    text-align: center;
+  }
+  .header .texts p {
+    display: none;
+  }
+  .header .header-links {
+    justify-content: center;
+    gap: 1rem;
+  }
+  .header .header-links #phone,
+  .header .header-links .quote {
+    padding: 0.6rem;
+  }
+  .content {
+    margin-top: 2rem;
+  }
+  .content .introductory-msg .intro-text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .content .introductory-msg .intro-text strong {
+    font-size: 19px;
+  }
+  .content .introductory-msg .intro-text p {
+    font-size: 15px;
+    width: 320px;
+    margin: auto;
+    margin-top: 0.5rem;
+  }
+  .content .introductory-msg .cards {
+    flex-direction: column;
+    gap: 0rem;
+    justify-content: center;
+    margin: auto;
+  }
+  .content .introductory-msg .cards .intro-card {
+    padding: 0.7rem;
+    width: 300px;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .content .about-section {
+    padding: 4rem 0rem;
+    width: 100%;
+  }
+  .content .about-section .about-msg {
+    width: 300px;
+    padding: 2rem 2rem 1rem 1rem;
+    gap: 0.5rem;
+  }
+  .content .about-section .about-msg h1 {
+    letter-spacing: 3px;
+    font-size: 23px;
+  }
+  .content .about-section .about-msg p {
+    font-size: 17px;
+  }
+  .content .about-section .about-msg span {
+    margin-top: 0.5rem;
+    font-size: 18px;
+  }
+  .experience {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .experience .illustration img {
+    width: 400px;
+  }
+  .experience .illustration .illustration-cards {
+    gap: 0.5rem;
+  }
+  .experience .illustration .illustration-cards .card {
+    right: 9rem;
+    padding: 0.5rem 2rem 0.5rem 1rem;
+  }
+  .experience .illustration .illustration-cards .card h1 {
+    font-size: 18px;
+  }
+  .experience .illustration .illustration-cards .card h1 span {
+    font-size: 16px;
+    white-space: nowrap;
+    margin-top: 0.3rem;
+  }
+  .experience .experience-text {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .experience .experience-text strong {
+    font-size: 20px;
+  }
+  .experience .experience-text .exp-links {
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .experience .experience-text .exp-links #phone,
+  .experience .experience-text .exp-links .quote {
+    padding: 0.6rem;
+  }
+  .service-areas {
+    margin-top: 3rem;
+    gap: 10rem;
+    padding: 2rem;
+  }
+  .service-areas .availability h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  .service-areas .availability p {
+    text-align: center;
+  }
+  .service-areas .links {
+    gap: 0.5rem;
+  }
+  .service-areas .links #phone,
+  .service-areas .links .quote {
+    padding: 0.6rem;
+    font-size: 14px;
+  }
+  .planning {
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .planning .planning-cards .plans {
+    width: 310px;
+    padding: 1rem;
+  }
+  .planning .plan-illustration {
+    flex-direction: row-reverse;
+  }
+  .planning .plan-illustration img {
+    height: 300px;
+    width: 380px;
+  }
+  .planning .plan-illustration .plan-cards {
+    gap: 0.7rem;
+  }
+  .planning .plan-illustration .plan-cards .plan {
+    top: 2rem;
+    flex-direction: row;
+    left: -8rem;
+  }
+  .planning .plan-illustration .plan-cards .plan i {
+    font-size: 30px;
+  }
+  .safety {
+    flex-direction: column-reverse;
+  }
+  .safety img {
+    width: 100%;
+  }
+  .safety h1 {
+    width: 100%;
+    padding: 2rem 0rem;
+    height: auto;
+    font-size: 25px;
+    align-items: center;
+  }
+  .safety h1 p {
+    font-size: 17px;
+    text-align: center;
+    width: 80%;
+  }
+  .driver-application {
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  .driver-application .apply-link {
+    padding: 2rem 0rem;
+    width: 100%;
+    border-radius: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .driver-application .apply-link h1 {
+    letter-spacing: 2px;
+  }
+  .driver-application .apply-link p {
+    width: 320px;
+  }
+  .driver-application .requirements {
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .driver-application .requirements .requirement-card .title {
+    letter-spacing: 0px;
+  }
+  .driver-application .requirements .requirement-card .contents {
+    width: 310px;
+  }
+  .help-form {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  .help-form .help-card {
+    padding: 1rem;
+    width: 100%;
+    background-color: transparent;
+    gap: 0.5rem;
+  }
+  .help-form .help-card h1 {
+    font-size: 23px;
+  }
+  .help-form .help-card span {
+    padding: 0.5rem;
+    font-size: 20px;
+  }
+  .help-form .help-input {
+    width: 100%;
+    gap: 1rem;
+  }
+  .help-form .help-input .inputs {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer {
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+  .footer .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .footer .footer-links .link-section {
+    gap: 0rem;
+  }
+  .footer .footer-links .link-section h1 {
+    margin-bottom: 0.5rem;
+  }
+  .thank-you {
+    font-size: 17px;
+    padding: 0.5rem;
+    border: 1.5px solid white;
+  }
+}/*# sourceMappingURL=style.css.map */
