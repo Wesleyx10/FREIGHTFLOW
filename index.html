@@ -324,12 +324,23 @@
         </span>
       </div>
       <div class="help-input">
-        <form id="inputs" class="inputs">
-          <input name="firstName" placeholder="First Name" type="text" />
-          <input name="lastName" placeholder="Last Name" type="text" />
-          <input name="phone" placeholder="Phone Number" type="tel" />
-          <input name="email" placeholder="Email Address" type="email" />
+        <form class="inputs" id="inputs">
+          <input
+            required
+            name="firstName"
+            placeholder="First Name"
+            type="text"
+          />
+          <input required name="lastName" placeholder="Last Name" type="text" />
+          <input required name="phone" placeholder="Phone Number" type="tel" />
+          <input
+            required
+            name="email"
+            placeholder="Email Address"
+            type="email"
+          />
           <textarea
+            required
             placeholder="Message"
             name="message"
             id="message"
